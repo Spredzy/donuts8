@@ -1,10 +1,15 @@
 pipeline {
-  agent any
+
+  agent {
+    label 'jenkins-jnlp-agent'
+  }
+
   stages {
-    stage('') {
+    stage('Display test') {
       steps {
         echo 'test'
       }
     }
   }
+
 }
